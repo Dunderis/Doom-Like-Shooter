@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3442a63684766854b9dfff95414e35dd, type: 3}
+  m_Name: MissionStart
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: VEGA
+    speakerImage: {fileID: 0}
+    sentence: 'Hello, I am VEGA the sentient intelligence assigned to mars. '
+  - speakerName: VEGA
+    speakerImage: {fileID: 0}
+    sentence: After running diagnostics on the predator suit, it appears that I can
+      activate your arsenal at an accelerated pace.
+  - speakerName: DOOM
+    speakerImage: {fileID: 0}
+    sentence: "Then let\u2019s not waste time."
+  - speakerName: DOOM
+    speakerImage: {fileID: 0}
+    sentence: Tell me... what powers this madness?
+  - speakerName: VEGA
+    speakerImage: {fileID: 0}
+    sentence: The road to Hell is paved by Argent Energy.
+  freezePlayer: 1

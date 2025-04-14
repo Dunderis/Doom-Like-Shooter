@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3442a63684766854b9dfff95414e35dd, type: 3}
+  m_Name: GameLaunchDialog
+  m_EditorClassIdentifier: 
+  lines:
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: 'In the first age, in the first battle, when the shadows first lengthened,
+      one stood. '
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: 'He chose the path of perpetual torment.
+
+'
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: In his ravenous hatred he found no peace,
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: and with boiling he scoured the umbral plains,
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: 'seeking vengeance against the dark lords who had robbed him. '
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: "And those who tasted the bite of his sword named him\u2026.\r.\r\n"
+  - speakerName: Game
+    speakerImage: {fileID: 21300000, guid: 79e67c4ac09484a45ad50c614652d838, type: 3}
+    sentence: 'The Doom slayer.
+
+'
+  freezePlayer: 1
