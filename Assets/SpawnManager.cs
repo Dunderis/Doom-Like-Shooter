@@ -44,7 +44,7 @@ public class SpawnManager : MonoBehaviour
                 var currentProbability = Random.value;
                 if (currentProbability <= enemySpawnDensity/2)
                 {
-                    Instantiate(gunPrefabs[(int)Random.Range(0, enemyPrefabs.Length - 1)], enemySpawnPoints[i].position, Quaternion.identity, parent: GetComponentInParent<Terrain>().gameObject.transform);
+                    Instantiate(enemyPrefabs[(int)Random.Range(0, enemyPrefabs.Length - 1)], enemySpawnPoints[i].position, Quaternion.identity, parent: GetComponentInParent<Terrain>().gameObject.transform);
                 }
             }
         }
