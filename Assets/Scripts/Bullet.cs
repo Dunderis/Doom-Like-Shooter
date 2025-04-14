@@ -1,9 +1,19 @@
+using System;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    public int damage;
+
+    private void OnTriggerEnter(Collider other)
     {
-        //Hit
+        var health = other.gameObject.GetComponent<Health>();
+
+        if (health != null)
+        {
+            health.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        
     }
 }
