@@ -137,6 +137,10 @@ public class ShootingController : MonoBehaviour
         
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, weapon.range))
         {
+            //dela damage
+            var monster = hit.collider.GetComponent<Monster>();
+            if (monster != null) monster.TakeDamage((int)weapon.damage);
+            
             if (weapon.impactEffect)
             {
                 GameObject impact = Instantiate(weapon.impactEffect, hit.point, Quaternion.LookRotation(hit.normal));

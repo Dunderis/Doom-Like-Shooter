@@ -13,6 +13,10 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform mainCamera;
     private float upDownRotation;
     [SerializeField] private bool inSprint; // check is person sprinting now
+    [SerializeField] private Transform feetPosition;
+    [SerializeField] private LayerMask groundLayer;
+    private float y;
+    private bool isGrounded;
 
 
     private void Start()
@@ -89,10 +93,20 @@ public class Movement : MonoBehaviour
     }
     private void Move()
     {
+        isGrounded = Physics.CheckSphere(feetPosition.position, .4f, groundLayer);
+        
+        if(isGrounded && y < 0) y = 0;
+        
         var x = Input.GetAxisRaw("Horizontal");
         var z = Input.GetAxisRaw("Vertical");
+        
 
         var move = (transform.right * x + transform.forward * z) * playerSpeed * Time.deltaTime;
+        
+        //add gravity
+        y += -9.8f * Time.deltaTime * Time.deltaTime;
+        move.y = y;
+        
         characterController.Move(move);
     }
 }

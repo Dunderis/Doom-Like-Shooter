@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponName: sadfasfdasdf
   weaponID: 0
   weaponIcon: {fileID: 0}
-  damage: 10
+  damage: 300
   range: 100
   fireRate: 0.5
   maxAmmo: 30
@@ -23,7 +23,9 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: cd57ab7e334cd49f7ac4d0b5a0a79cf4, type: 3}
   emptySound: {fileID: 8300000, guid: cd57ab7e334cd49f7ac4d0b5a0a79cf4, type: 3}
   reloadSound: {fileID: 8300000, guid: cd57ab7e334cd49f7ac4d0b5a0a79cf4, type: 3}
-  muzzleFlash: {fileID: 0}
-  impactEffect: {fileID: 0}
+  muzzleFlash: {fileID: 1680391749924239311, guid: a701e0c4b7f9f44c1bc93e9d648269e9,
+    type: 3}
+  impactEffect: {fileID: 528026670245346517, guid: 10dc03bba0fc64037b0e6d4125fe6de6,
+    type: 3}
   weight: 1
   reloadTime: 1.5

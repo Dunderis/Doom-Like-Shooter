@@ -47,6 +47,7 @@ public class SpawnManager : MonoBehaviour
                     Instantiate(enemyPrefabs[(int)Random.Range(0, enemyPrefabs.Length - 1)], enemySpawnPoints[i].position, Quaternion.identity, parent: GetComponentInParent<Terrain>().gameObject.transform);
                 }
             }
+            timer = 0;
         }
     }
     public void StartSpawn()

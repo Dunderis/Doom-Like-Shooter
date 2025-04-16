@@ -26,14 +26,14 @@ public class Monster : MonoBehaviour
         randomDestination = transform.position;
         InvokeRepeating(nameof(RandomDestination), 2f, 3f);
         
-        print(target);
+        //print(target);
     }
 
     void Update()
     {
         float distance = Vector3.Distance(transform.position, target.position);
         
-        print(distance);
+        //print(distance);
         if (distance <= viewDistance && target != null && agent.enabled) agent.SetDestination(target.position);
         else agent.SetDestination(randomDestination);
         
