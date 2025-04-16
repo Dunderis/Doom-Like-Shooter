@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,6 +13,7 @@ public class Monster : MonoBehaviour
     
     public float attackCooldown = 0.5f;
     public float attackLength = 1.5f;
+    public float stoppingDistance = 3;
     
     private NavMeshAgent agent;
     private bool attacking;
@@ -54,8 +56,8 @@ public class Monster : MonoBehaviour
         attacking = true;
         agent.SetDestination(transform.position);
         
-        //var health = target.gameObject.GetComponent<>();  // Prideti player script
-        //if (health != null) health.TakeDamage(damage);
+        var health = target.gameObject.GetComponent<Player>();  // Prideti player script
+        if (health != null) health.TakeDamage(damage);
         
         yield return new WaitForSeconds(attackLength); // skirta attack animationui
         
